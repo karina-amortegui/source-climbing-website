@@ -1,0 +1,56 @@
+/* Future Tailwind v4 adapter. Not a standalone stylesheet/build entry.
+   Import tokens.css and this file after Tailwind in the eventual app entry. */
+@theme inline {
+  --color-source-black: var(--source-black);
+  --color-source-charcoal: var(--source-charcoal);
+  --color-source-off-white: var(--source-off-white);
+  --color-source-white: var(--source-white);
+  --color-source-lime: var(--source-lime);
+  --color-canvas: var(--source-canvas);
+  --color-surface: var(--source-surface);
+  --color-ink: var(--source-ink);
+  --color-muted: var(--source-muted);
+  --color-inverse: var(--source-inverse);
+  --color-accent: var(--source-accent);
+  --color-on-accent: var(--source-on-accent);
+  --color-accent-hover: var(--source-accent-hover);
+  --color-border: var(--source-border);
+  --color-control-border: var(--source-control-border);
+  --color-error: var(--source-error);
+  --color-success: var(--source-success);
+  --font-body: var(--source-font-body);
+  --font-heading: var(--source-font-heading);
+  --font-weight-copy: var(--source-weight-body);
+  --font-weight-label: var(--source-weight-label);
+  --font-weight-title: var(--source-weight-heading);
+  --text-small: var(--source-text-small);
+  --text-body: var(--source-text-body);
+  --text-lead: var(--source-text-lead);
+  --text-card: var(--source-text-card);
+  --text-section: var(--source-text-section);
+  --text-display: var(--source-text-display);
+  --leading-body: var(--source-leading-body);
+  --leading-heading: var(--source-leading-heading);
+  --tracking-heading: var(--source-tracking-heading);
+  --spacing: var(--source-space-unit);
+  --spacing-gutter: var(--source-gutter);
+  --spacing-section: var(--source-section-space);
+  --spacing-control: var(--source-control-height);
+  --container-content: var(--source-content-width);
+  --container-reading: var(--source-reading-width);
+  --radius-control: var(--source-radius-control);
+  --radius-card: var(--source-radius-card);
+  --shadow-card: var(--source-shadow-card);
+  --ease-source: var(--source-ease);
+}
+
+/* Literal rem values are required here; CSS var() is not a media-query value.
+   These provisional breakpoints are owned here, not duplicated in tokens.css. */
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem;
+}

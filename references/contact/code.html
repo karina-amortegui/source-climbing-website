@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Source Climbing Center</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "text-muted": "#8E8E93", "on-secondary-fixed-variant": "#454744", "on-tertiary-container": "#545453", "on-background": "#e5e2e1", "tertiary-container": "#cac8c7", "on-tertiary-fixed": "#1b1c1c", "background": "#131313", "surface-container-lowest": "#0e0e0e", "tertiary-fixed": "#e4e2e1", "primary": "#d2f24e", "primary-fixed-dim": "#b4d330", "on-secondary": "#2f312e", "on-secondary-fixed": "#1a1c19", "tertiary": "#e7e4e3", "secondary": "#c6c7c2", "on-surface": "#e5e2e1", "on-tertiary-fixed-variant": "#474746", "on-secondary-container": "#b8b9b4", "secondary-fixed": "#e3e3de", "secondary-container": "#484a46", "surface-container": "#201f1f", "error-container": "#93000a", "surface-container-highest": "#353534", "surface-container-high": "#2a2a2a", "outline-variant": "#454935", "on-surface-variant": "#c6c9b0", "secondary-fixed-dim": "#c6c7c2", "on-primary-container": "#4a5a00", "on-primary-fixed": "#181e00", "surface-dim": "#131313", "border-subtle": "#333333", "surface-bright": "#3a3939", "pure-white": "#FFFFFF", "error": "#ffb4ab", "primary-container": "#b6d532", "surface-charcoal": "#262626", "surface-elevated": "#1A1A1A", "outline": "#8f937c", "inverse-primary": "#546500", "surface-variant": "#353534", "on-primary": "#2a3400", "on-primary-fixed-variant": "#3f4c00", "inverse-on-surface": "#313030", "surface": "#131313", "surface-container-low": "#1c1b1b", "on-tertiary": "#303030", "on-error-container": "#ffdad6", "primary-fixed": "#d0f04c", "inverse-surface": "#e5e2e1", "tertiary-fixed-dim": "#c8c6c5", "surface-tint": "#b4d330", "on-error": "#690005" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2.5rem", "space-md": "1rem", "gutter": "1.5rem", "margin": "2.5rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem" }, "fontFamily": { "caption": [ "Inter" ], "headline-lg": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ], "body-md": [ "Inter" ], "body-sm": [ "Inter" ], "headline-xl": [ "Space Grotesk" ], "body-lg": [ "Inter" ], "label-lg": [ "Space Grotesk" ], "label-md": [ "Space Grotesk" ], "headline-xl-mobile": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ], "display-hero": [ "Space Grotesk" ] }, "fontSize": { "caption": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "body-md": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.45)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><img alt="logo.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U4wUUMlsPwdENcirrpy7kBeC4HdPuLoGyf-3oIDZARTkqQBPjbEl7NZqA1yM4pQhiG2iMO8Kk4a88rarGCKgSUaAmLXhoLdq0FbiCCoQOu6oI7NDIPrY7X1d8aZ4ATWQtUPk_97ZidjTQKYk3FPvaZUBRJCnGi7v8Rr2m-aQe7D1leqOrfxOBijfTuybKQuSL6zmdAC0Sol3a9VyRXXhD4PM18YAjhxMR0QPtVd1hUoIkn4RDq1PsGc06N"/><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface select-none">Source Climbing</span></div><nav class="hidden xl:flex items-center gap-space-xs p-space-xs rounded-xl bg-surface-container-low/60" data-active-classes="bg-surface-charcoal text-primary border-subtle"><a class="px-space-md py-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-charcoal transition-colors rounded" data-path="visit" href="#">Visit</a><a class="px-space-md py-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-charcoal transition-colors rounded" data-path="classes" href="#">Classes</a><a class="px-space-md py-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-charcoal transition-colors rounded" data-path="youth-families" href="#">Youth &amp; Families</a><a class="px-space-md py-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-charcoal transition-colors rounded" data-path="membership" href="#">Membership</a><a class="px-space-md py-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-charcoal transition-colors rounded" data-path="community" href="#">Community</a><a class="px-space-md py-space-xs font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface hover:bg-surface-charcoal transition-colors rounded" data-path="about" href="#">About</a><a aria-current="page" class="px-space-md py-space-xs font-label-md uppercase tracking-wider transition-colors rounded bg-surface-charcoal text-primary border-subtle" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs font-label-lg text-label-lg uppercase tracking-wider text-on-surface bg-surface-charcoal hover:bg-surface-container-highest transition-colors rounded-lg" data-path="waiver" href="#">Sign Waiver</a><a class="inline-flex items-center justify-center px-space-md py-space-xs font-label-lg text-label-lg uppercase tracking-wider text-on-primary bg-primary hover:bg-primary-fixed-dim transition-all active:scale-[0.98] rounded-lg shadow-sm" data-path="book-a-class" href="#">Book a Class</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO & DIRECT CONTACT OVERVIEW -->
+<section class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin pt-12 md:pt-16 pb-16 md:pb-24">
+<!-- Breadcrumb / System Status Header -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-8">
+<div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-high border-subtle">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary">Get in Touch • Downtown Vancouver, WA</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm font-label-md text-label-md text-text-muted">
+<span>Historic Main St District</span>
+<span class="text-outline">/</span>
+<span class="text-on-surface">Corner of 12th &amp; Main</span>
+</div>
+</div>
+<!-- Editorial Title & Lead -->
+<div class="max-w-4xl space-y-space-md mb-12 md:mb-16">
+<h1 class="font-headline-xl md:font-display-hero text-headline-xl md:text-display-hero uppercase tracking-tight text-on-surface leading-tight">
+        We're here on Main Street. <br class="hidden sm:inline"/>
+<span class="text-primary">How can we help?</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+        Whether you're planning your first climb, asking about youth programs, or need help with your visit, our front desk team is ready to connect.
+      </p>
+</div>
+<!-- 3 Quick Action Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Call Direct -->
+<div class="group relative flex flex-col justify-between p-8 md:p-10 rounded-xl bg-surface-elevated hover:bg-surface-charcoal transition-all duration-300">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">call</span>
+</div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-text-muted">Direct Phone</span>
+</div>
+<div>
+<span class="font-caption text-caption uppercase tracking-widest text-primary block mb-1">Live Desk Support</span>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">(360) 694-9096</h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">
+            Immediate assistance during gym open hours. Staff answered on the desk.
+          </p>
+</div>
+<div class="pt-8">
+<a class="inline-flex w-full items-center justify-center gap-space-xs px-6 py-3.5 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="tel:3606949096">
+<span>Call Front Desk</span>
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+</div>
+</div>
+<!-- Email Direct -->
+<div class="group relative flex flex-col justify-between p-8 md:p-10 rounded-xl bg-surface-elevated hover:bg-surface-charcoal transition-all duration-300">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">mail</span>
+</div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-text-muted">Inquiries</span>
+</div>
+<div>
+<span class="font-caption text-caption uppercase tracking-widest text-primary block mb-1">Front Desk Inbox</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">frontdesk@sourceclimbing.com</h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">
+            General inquiries, lost &amp; found checks, and visitor questions.
+          </p>
+</div>
+<div class="pt-8">
+<a class="inline-flex w-full items-center justify-center gap-space-xs px-6 py-3.5 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200" href="mailto:frontdesk@sourceclimbing.com">
+<span>Send Email</span>
+<span class="material-symbols-outlined text-[18px]">outgoing_mail</span>
+</a>
+</div>
+</div>
+<!-- Visit Location -->
+<div class="group relative flex flex-col justify-between p-8 md:p-10 rounded-xl bg-surface-elevated hover:bg-surface-charcoal transition-all duration-300">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">location_on</span>
+</div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-text-muted">Gym Coordinates</span>
+</div>
+<div>
+<span class="font-caption text-caption uppercase tracking-widest text-primary block mb-1">Historic Downtown</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">1118 Main St, Vancouver, WA</h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">
+            Historic downtown Vancouver, corner of 12th &amp; Main.
+          </p>
+</div>
+<div class="pt-8">
+<a class="inline-flex w-full items-center justify-center gap-space-xs px-6 py-3.5 rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200 shadow-sm" href="https://maps.google.com/?q=1118+Main+St,+Vancouver,+WA+98660" rel="noopener noreferrer" target="_blank">
+<span>Get Directions</span>
+<span class="material-symbols-outlined text-[18px]">navigation</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: FACILITY HOURS & HOLIDAY SCHEDULE NOTICES -->
+<section class="w-full bg-surface-container-low py-16 md:py-24">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-12">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary block mb-2">Schedule &amp; Availability</span>
+<h2 class="font-headline-lg md:font-headline-xl text-headline-lg md:text-headline-xl uppercase tracking-tight text-on-surface">
+            Facility Hours &amp; Holiday Schedule
+          </h2>
+</div>
+<div class="inline-flex items-center gap-space-xs px-4 py-2 rounded-lg bg-surface-elevated text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">notifications_active</span>
+<span>Setting closures announced weekly on Instagram</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Regular Operating Hours -->
+<div class="lg:col-span-7 flex flex-col justify-between p-8 md:p-10 rounded-xl bg-surface-elevated">
+<div>
+<div class="flex items-center justify-between pb-6 mb-6">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">schedule</span>
+<h3 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface">Standard Gym Hours</h3>
+</div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded">Open 7 Days</span>
+</div>
+<div class="space-y-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between py-3.5 px-4 rounded-lg bg-surface-container-high/60 gap-1">
+<span class="font-body-md text-body-md text-on-surface font-medium">Monday – Friday</span>
+<span class="font-label-lg text-label-lg text-primary tracking-wide">6:00 AM – 10:00 PM</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between py-3.5 px-4 rounded-lg bg-surface-container-high/60 gap-1">
+<span class="font-body-md text-body-md text-on-surface font-medium">Saturday</span>
+<span class="font-label-lg text-label-lg text-primary tracking-wide">8:00 AM – 9:00 PM</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between py-3.5 px-4 rounded-lg bg-surface-container-high/60 gap-1">
+<span class="font-body-md text-body-md text-on-surface font-medium">Sunday</span>
+<span class="font-label-lg text-label-lg text-primary tracking-wide">9:00 AM – 8:00 PM</span>
+</div>
+</div>
+</div>
+<!-- Early Access Banner -->
+<div class="mt-8 p-5 rounded-lg bg-surface-charcoal flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary/20 text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface">Member Early Access</h4>
+<span class="text-primary text-[10px] font-bold px-1.5 py-0.5 rounded bg-primary/20">KEYCARD</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-1 leading-relaxed">
+                Monday – Friday: <span class="text-on-surface font-medium">5:30 AM – 9:00 AM</span>. Active keycard scan or front desk check-in required before general public entry.
+              </p>
+</div>
+</div>
+</div>
+<!-- Upcoming Holiday Exceptions -->
+<div class="lg:col-span-5 flex flex-col justify-between p-8 md:p-10 rounded-xl bg-surface-elevated">
+<div>
+<div class="flex items-center gap-space-sm pb-6 mb-6">
+<span class="material-symbols-outlined text-primary text-[24px]">event_busy</span>
+<h3 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface">Holiday Exceptions</h3>
+</div>
+<ul class="space-y-3 font-body-sm text-body-sm">
+<li class="flex items-center justify-between py-2.5 px-3 rounded bg-surface-container/60">
+<span class="text-on-surface font-medium">Memorial Day</span>
+<span class="text-on-surface-variant font-mono text-caption">8:00 AM – 6:00 PM</span>
+</li>
+<li class="flex items-center justify-between py-2.5 px-3 rounded bg-surface-container/60">
+<span class="text-on-surface font-medium">4th of July</span>
+<span class="text-on-surface-variant font-mono text-caption">Closed at 4:00 PM</span>
+</li>
+<li class="flex items-center justify-between py-2.5 px-3 rounded bg-surface-container/60">
+<span class="text-on-surface font-medium">Labor Day</span>
+<span class="text-on-surface-variant font-mono text-caption">8:00 AM – 6:00 PM</span>
+</li>
+<li class="flex items-center justify-between py-2.5 px-3 rounded bg-surface-container/60">
+<span class="text-on-surface font-medium">Thanksgiving Day</span>
+<span class="text-error font-medium font-mono text-caption">Closed</span>
+</li>
+<li class="flex items-center justify-between py-2.5 px-3 rounded bg-surface-container/60">
+<span class="text-on-surface font-medium">Christmas Eve / Day</span>
+<span class="text-on-surface-variant font-mono text-caption">8AM–2PM / Closed</span>
+</li>
+<li class="flex items-center justify-between py-2.5 px-3 rounded bg-surface-container/60">
+<span class="text-on-surface font-medium">New Year's Day</span>
+<span class="text-on-surface-variant font-mono text-caption">10:00 AM – 8:00 PM</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 pt-4">
+<p class="font-caption text-caption text-text-muted flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">info</span>
+<span>All holiday adjustments are confirmed 14 days in advance in our member app.</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: VERIFIED DIRECTIONS, PARKING & TRANSIT ACCESS -->
+<section class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin py-16 md:py-24">
+<div class="max-w-3xl mb-12">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary block mb-2">Arrival &amp; Transit</span>
+<h2 class="font-headline-lg md:font-headline-xl text-headline-lg md:text-headline-xl uppercase tracking-tight text-on-surface">
+        Directions, Parking &amp; Transit Access
+      </h2>
+<p class="font-body-md text-body-md text-text-muted mt-2">
+        Centrally situated in the walkable heart of downtown Vancouver, right off I-5 and the Columbia River crossing.
+      </p>
+</div>
+<!-- Split Visual + Arrival Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- 4 Transportation Detail Cards -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<!-- Street Parking -->
+<div class="p-6 md:p-8 rounded-xl bg-surface-elevated flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-[22px]">local_parking</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Street Parking</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+              Metered &amp; free 2-hour street parking along Main St, Broadway, and 12th St. Free after 6:00 PM on weekdays and all day on weekends.
+            </p>
+</div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary mt-6 block">Free After 6:00 PM</span>
+</div>
+<!-- Parking Garages -->
+<div class="p-6 md:p-8 rounded-xl bg-surface-elevated flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-[22px]">garage</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Parking Garages</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+              Vancouver Center Garage (601 Columbia St) and Evergreen Underground lot are within a convenient 3-block walk of our front entrance.
+            </p>
+</div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mt-6 block">&lt; 3 Blocks Walk</span>
+</div>
+<!-- Public Transit -->
+<div class="p-6 md:p-8 rounded-xl bg-surface-elevated flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-[22px]">directions_bus</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Public Transit</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+              C-TRAN Vine Bus Rapid Transit stops 1 block away at Turtle Place (7th &amp; Main) and 12th &amp; Washington. Rapid line connectivity.
+            </p>
+</div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary mt-6 block">Vine BRT Route 60</span>
+</div>
+<!-- Bike Parking -->
+<div class="p-6 md:p-8 rounded-xl bg-surface-elevated flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-[22px]">pedal_bike</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Indoor Bike Racks</h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+              Dedicated indoor bicycle racks available inside the front mezzanine vestibule for all climbing members and daily visitors.
+            </p>
+</div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mt-6 block">Secure &amp; Dry</span>
+</div>
+</div>
+<!-- Map & Authentic Photo Card -->
+<div class="lg:col-span-5 flex flex-col rounded-xl overflow-hidden bg-surface-elevated shadow-xl">
+<div class="relative h-64 sm:h-72 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Warm welcoming front desk entrance of Source Climbing Center on Main Street in Vancouver, Washington. Friendly staff member in a beanie greeting a couple at the wooden desk counter with outdoor gear shop displays in the background, warm ambient lighting and urban climbing community vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCve7e8wKNGRikp9dy22Hv534k7BJ2xP9l357v-qLgAW8pCi0sKw0b6yCVTLYatHodqqZJzuALhqjgSHvH0lPZwouhXoo0-2qgJLkmmcyGngVrhlR5MVhuk4ZmwNNZ00TrK1W1dOH0I-3ze_k1x3xqcVJRdAXji_wLtR0nUDYbHekXYwqLuYUKjy8-yKNsTN1OTcryAVJN8Ugz5lHmhqnb87ORzV6YSE9KVg2pRqBMF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-elevated via-transparent to-transparent"></div>
+<div class="absolute top-4 right-4 px-3 py-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">Front Entrance</span>
+</div>
+</div>
+<div class="p-8 flex-1 flex flex-col justify-between space-y-6">
+<div class="space-y-3">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+<span class="font-label-md text-label-md uppercase tracking-widest">Main Street Anchor</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">1118 Main Street</h3>
+<p class="font-body-sm text-body-sm text-text-muted">
+              Vancouver, WA 98660 • Across from Kiggins Theatre and steps from local coffee, dining, and Esther Short Park.
+            </p>
+</div>
+<div class="space-y-3 pt-2">
+<a class="inline-flex w-full items-center justify-center gap-space-xs px-6 py-3.5 rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-lg text-label-lg uppercase tracking-wider transition-all duration-200 shadow-sm" href="https://maps.google.com/?q=1118+Main+St,+Vancouver,+WA+98660" rel="noopener noreferrer" target="_blank">
+<span>Open in Google Maps</span>
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+<a class="inline-flex w-full items-center justify-center gap-space-xs px-6 py-3 rounded-lg bg-surface-container hover:bg-surface-charcoal text-on-surface font-label-md text-label-md uppercase tracking-wider transition-all duration-200" href="https://maps.apple.com/?address=1118+Main+St,+Vancouver,+WA+98660" rel="noopener noreferrer" target="_blank">
+<span>Open in Apple Maps</span>
+<span class="material-symbols-outlined text-[18px]">map</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: SPECIALIZED INQUIRY ROUTING -->
+<section class="w-full bg-surface-container-low py-16 md:py-20">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="max-w-3xl mb-10">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary block mb-2">Need Something Specific?</span>
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight text-on-surface">
+          Faster Paths for Common Requests
+        </h2>
+<p class="font-body-md text-body-md text-text-muted mt-2">
+          Save time by going directly to dedicated scheduling and membership workflows.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Route 1: Birthday Parties & Groups -->
+<div class="p-8 rounded-xl bg-surface-elevated flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+<div class="space-y-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">celebration</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+              Booking a Birthday Party or Group Event?
+            </h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+              For dedicated staff belayers, private mezzanine room reservations, and custom climbing packages, visit our event booking calendar.
+            </p>
+</div>
+<div class="pt-8">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-primary-fixed-dim uppercase tracking-wider group" data-path="youth-families" href="#">
+<span>Go to Parties &amp; Groups</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Route 2: Membership Management -->
+<div class="p-8 rounded-xl bg-surface-elevated flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+<div class="space-y-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">card_membership</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+              Need to Freeze, Unfreeze, or Update Membership?
+            </h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+              Membership billing and status changes require secure Rock Gym Pro verification. Do not submit payment cards or freeze requests via general contact.
+            </p>
+</div>
+<div class="pt-8">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-primary-fixed-dim uppercase tracking-wider group" data-path="membership" href="#">
+<span>Manage Membership</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Route 3: Class Schedules & Youth Teams -->
+<div class="p-8 rounded-xl bg-surface-elevated flex flex-col justify-between transition-transform duration-200 hover:-translate-y-1">
+<div class="space-y-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">fitness_center</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+              Looking for Class Schedules or Youth Teams?
+            </h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+              View live Intro to Bouldering clinic openings, Lead Belay certifications, or register for seasonal youth competitive team tryouts.
+            </p>
+</div>
+<div class="pt-8">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-primary-fixed-dim uppercase tracking-wider group" data-path="classes" href="#">
+<span>Explore Classes &amp; Youth</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: GENERAL INQUIRY FORM -->
+<section class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin py-16 md:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Editorial Column -->
+<div class="lg:col-span-5 space-y-space-lg">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary block mb-2">Send a Message</span>
+<h2 class="font-headline-lg md:font-headline-xl text-headline-lg md:text-headline-xl uppercase tracking-tight text-on-surface">
+            Message Our Front Desk
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 leading-relaxed">
+            Have a general question? Fill out the form below. We typically review messages within 24 to 48 hours.
+          </p>
+</div>
+<div class="p-6 md:p-8 rounded-xl bg-surface-elevated space-y-4">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+<span class="font-label-lg text-label-lg uppercase tracking-wider">Fast Turnaround</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed">
+            Our full-time crew on Main Street personally reads every inquiry. For same-day time-sensitive questions about gym capacity or lost keys, call us directly.
+          </p>
+<div class="pt-2">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-on-surface hover:text-primary transition-colors" href="tel:3606949096">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>(360) 694-9096</span>
+</a>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden h-52">
+<img class="w-full h-full object-cover" data-alt="Active climbers smiling and chatting at the bottom of the bouldering wall at Source Climbing Center, with crash pads and gym dog sitting happily nearby, bright energetic climbing wall in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNbEZdSin3I5W31yrAOsMG19-2B-7VFD40Z5PuUNyJJd3kUX8VWibw_HKQBTBn7bO4m4em7cV59yLNN1oWXT99OpxrvScKbiWN0r-5dLEOLtkpOur-S9ba-Zi11NDAwqWlv_cmWhG40stpjZevF-WodLfTyEz-Wk-0Yv-HtngWBpvz7OWUQr4QN-Yz8QAJbG-vTQNU0JsciPqtpSRZs9aP5ParXW1oxozLvWP6IW8J"/>
+<div class="absolute inset-0 bg-surface-elevated/40 backdrop-blur-[2px]"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<span class="font-caption text-caption text-on-surface bg-surface-container-lowest/80 px-2.5 py-1 rounded inline-block">
+              "All Are Climbers Here" • Downtown Vancouver Community
+            </span>
+</div>
+</div>
+</div>
+<!-- Right Form Card -->
+<div class="lg:col-span-7 p-8 md:p-12 rounded-xl bg-surface-elevated shadow-xl">
+<form class="space-y-6" id="contact-form" onsubmit="event.preventDefault(); document.getElementById('form-success-banner').classList.remove('hidden'); document.getElementById('contact-form').reset();">
+<!-- Name Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-2">
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface" for="first-name">
+                First Name <span class="text-primary">*</span>
+</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container text-on-surface placeholder:text-text-muted font-body-md text-body-md focus:outline-none focus:bg-surface-charcoal transition-all duration-200" id="first-name" placeholder="e.g. Maya" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface" for="last-name">
+                Last Name <span class="text-text-muted text-caption lowercase">(optional)</span>
+</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container text-on-surface placeholder:text-text-muted font-body-md text-body-md focus:outline-none focus:bg-surface-charcoal transition-all duration-200" id="last-name" placeholder="e.g. Chen" type="text"/>
+</div>
+</div>
+<!-- Email & Phone Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-2">
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface" for="email">
+                Email Address <span class="text-primary">*</span>
+</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container text-on-surface placeholder:text-text-muted font-body-md text-body-md focus:outline-none focus:bg-surface-charcoal transition-all duration-200" id="email" placeholder="you@domain.com" required="" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface" for="phone">
+                Phone Number <span class="text-text-muted text-caption lowercase">(optional)</span>
+</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container text-on-surface placeholder:text-text-muted font-body-md text-body-md focus:outline-none focus:bg-surface-charcoal transition-all duration-200" id="phone" placeholder="(360) 000-0000" type="tel"/>
+</div>
+</div>
+<!-- Inquiry Topic Select -->
+<div class="space-y-2">
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface" for="topic">
+              Inquiry Topic / Subject <span class="text-primary">*</span>
+</label>
+<div class="relative">
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container text-on-surface font-body-md text-body-md appearance-none focus:outline-none focus:bg-surface-charcoal transition-all duration-200 cursor-pointer pr-10" id="topic" required="">
+<option class="bg-surface-elevated text-text-muted" disabled="" selected="" value="">Select an inquiry topic...</option>
+<option class="bg-surface-elevated text-on-surface" value="general">General Question</option>
+<option class="bg-surface-elevated text-on-surface" value="first-timer">First-Time Visitor</option>
+<option class="bg-surface-elevated text-on-surface" value="lost-found">Lost &amp; Found</option>
+<option class="bg-surface-elevated text-on-surface" value="feedback">Facility Feedback</option>
+<option class="bg-surface-elevated text-on-surface" value="other">Other Inquiries</option>
+</select>
+<div class="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant flex items-center">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Message Field -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface" for="message">
+                Message <span class="text-primary">*</span>
+</label>
+<span class="font-caption text-caption text-text-muted">No payment info</span>
+</div>
+<textarea class="w-full px-4 py-3 rounded-lg bg-surface-container text-on-surface placeholder:text-text-muted font-body-md text-body-md focus:outline-none focus:bg-surface-charcoal transition-all duration-200 resize-none" id="message" placeholder="How can we help you? Please do not include payment card numbers or membership cancellation requests here." required="" rows="5"></textarea>
+</div>
+<!-- Privacy Note -->
+<div class="flex items-start gap-2 pt-1 font-caption text-caption text-text-muted">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5">verified_user</span>
+<span>Protected by spam verification. We respect your privacy and never share your details.</span>
+</div>
+<!-- Success Alert Message (Hidden until triggered) -->
+<div class="hidden p-4 rounded-lg bg-primary/10 text-primary font-body-sm text-body-sm flex items-center gap-space-sm" id="form-success-banner">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Message sent successfully! Our front desk will follow up within 24 to 48 hours.</span>
+</div>
+<!-- Submit Button & Immediate Phone CTA -->
+<div class="pt-2 space-y-4">
+<button class="w-full py-4 px-8 rounded-lg bg-primary hover:bg-primary-fixed-dim active:scale-[0.99] text-on-primary font-label-lg text-label-lg uppercase tracking-widest transition-all duration-200 flex items-center justify-center gap-space-xs shadow-md" type="submit">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+<p class="text-center font-caption text-caption text-text-muted">
+              Need immediate help today? Call our front desk at <a class="text-on-surface font-medium hover:text-primary transition-colors underline decoration-border-subtle" href="tel:3606949096">(360) 694-9096</a> during gym hours.
+            </p>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- SECTION 6: FREQUENTLY ASKED QUESTIONS ACCORDION -->
+<section class="w-full bg-surface-container-low py-16 md:py-24">
+<div class="max-w-4xl mx-auto px-margin-mobile md:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary block mb-2">Helpful Details</span>
+<h2 class="font-headline-lg md:font-headline-xl text-headline-lg md:text-headline-xl uppercase tracking-tight text-on-surface">
+          Frequently Asked Questions
+        </h2>
+<p class="font-body-md text-body-md text-text-muted mt-2">
+          Quick answers to common arrival, drop-in, and policy inquiries.
+        </p>
+</div>
+<div class="space-y-4" id="faq-accordion">
+<!-- FAQ 1 -->
+<div class="rounded-xl bg-surface-elevated overflow-hidden transition-colors">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface pr-4">Can I just drop in without calling ahead?</span>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary transition-transform duration-200 faq-icon">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</span>
+</button>
+<div class="faq-content hidden px-6 md:px-8 pb-8 pt-0">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Yes! Drop-ins are welcome anytime during open hours for bouldering and auto-belays. First-time visitors just need to complete a digital waiver before hopping on the walls. Gear rentals (shoes and chalk) are always available at the desk.
+            </p>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="rounded-xl bg-surface-elevated overflow-hidden transition-colors">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface pr-4">What if I lost an item at the gym?</span>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary transition-transform duration-200 faq-icon">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</span>
+</button>
+<div class="faq-content hidden px-6 md:px-8 pb-8 pt-0">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Call our front desk directly at (360) 694-9096 or send a message using the form above with "Lost &amp; Found" selected. Unclaimed items, shoes, and chalk bags are safely held at the desk bin for 30 days before being donated to local outdoor outreach programs.
+            </p>
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="rounded-xl bg-surface-elevated overflow-hidden transition-colors">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface pr-4">Can I change or cancel my membership using this form?</span>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary transition-transform duration-200 faq-icon">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</span>
+</button>
+<div class="faq-content hidden px-6 md:px-8 pb-8 pt-0">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              No. For your account security and verification, please use our Member Services portal or speak with a front desk team member in person. Changes require identity verification via our Rock Gym Pro system.
+            </p>
+</div>
+</div>
+<!-- FAQ 4 -->
+<div class="rounded-xl bg-surface-elevated overflow-hidden transition-colors">
+<button aria-expanded="false" class="faq-toggle w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface pr-4">Are dogs allowed in the climbing center?</span>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary transition-transform duration-200 faq-icon">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</span>
+</button>
+<div class="faq-content hidden px-6 md:px-8 pb-8 pt-0">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Friendly, leashed, well-behaved dogs are welcome in our community lounge and front seating areas, but must stay off the active climbing landing mats at all times for safety and hygiene.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Accordion Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggles = document.querySelectorAll('.faq-toggle');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', function () {
+          const content = this.nextElementSibling;
+          const icon = this.querySelector('.faq-icon');
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+          // Close all other panels
+          toggles.forEach(otherToggle => {
+            if (otherToggle !== toggle) {
+              otherToggle.setAttribute('aria-expanded', 'false');
+              otherToggle.nextElementSibling.classList.add('hidden');
+              otherToggle.querySelector('.faq-icon').classList.remove('rotate-180');
+            }
+          });
+
+          // Toggle current
+          if (isExpanded) {
+            this.setAttribute('aria-expanded', 'false');
+            content.classList.add('hidden');
+            icon.classList.remove('rotate-180');
+          } else {
+            this.setAttribute('aria-expanded', 'true');
+            content.classList.remove('hidden');
+            icon.classList.add('rotate-180');
+          }
+        });
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface-variant pt-space-xl pb-space-lg"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md uppercase tracking-tight text-on-surface">Source Climbing</span></div><p class="font-body-sm text-body-sm text-text-muted leading-relaxed">All Are Climbers Here. Community-driven bouldering, training, and technical climbing centered in the heart of Vancouver, Washington.</p><div class="space-y-space-xs pt-space-xs font-body-sm text-body-sm text-on-surface-variant"><p class="text-on-surface font-medium">1118 Main St, Vancouver, WA 98660</p><p><a class="hover:text-primary transition-colors" href="tel:3606949096">(360) 694-9096</a></p><p><a class="hover:text-primary transition-colors" href="mailto:frontdesk@sourceclimbing.com">frontdesk@sourceclimbing.com</a></p></div></div><div class="space-y-space-md"><h3 class="font-label-lg text-label-lg uppercase tracking-widest text-primary">Gym Hours</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="flex justify-between py-1"><span class="text-text-muted">Monday – Friday</span><span class="text-on-surface font-medium">6:00 AM – 10:00 PM</span></li><li class="flex justify-between py-1"><span class="text-text-muted">Saturday</span><span class="text-on-surface font-medium">8:00 AM – 9:00 PM</span></li><li class="flex justify-between py-1"><span class="text-text-muted">Sunday</span><span class="text-on-surface font-medium">9:00 AM – 8:00 PM</span></li></ul><div class="p-space-sm rounded-lg bg-surface-container-low"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-md text-label-md uppercase tracking-wider text-primary">Member Early Access</span></div><p class="font-caption text-caption text-text-muted mt-space-xs">Mon – Fri: 5:30 AM early gym entry with active keytag.</p></div></div><div class="space-y-space-md"><h3 class="font-label-lg text-label-lg uppercase tracking-widest text-primary">Member Services</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="py-1"><a class="hover:text-on-surface transition-colors" data-path="membership-portal" href="#">Member Portal &amp; Keytag</a></li><li class="py-1"><a class="hover:text-on-surface transition-colors" data-path="guest-passes" href="#">Monthly Guest Passes</a></li><li class="py-1"><a class="hover:text-on-surface transition-colors" data-path="freeze-cancel" href="#">Freeze or Cancel Account</a></li><li class="py-1"><a class="hover:text-on-surface transition-colors" data-path="gear-shop" href="#">Pro Shop &amp; Shoe Rentals</a></li><li class="py-1"><a class="hover:text-on-surface transition-colors" data-path="locker-rentals" href="#">Locker &amp; Towel Service</a></li></ul></div><div class="space-y-space-md"><h3 class="font-label-lg text-label-lg uppercase tracking-widest text-primary">Community &amp; Events</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="py-1"><a class="hover:text-on-surface transition-colors" data-path="climbing-teams" href="#">Youth Climbing Teams</a></li><li class="py-1"><a class="hover:text-on-surface transition-colors" data-path="bouldering-leagues" href="#">Seasonal Bouldering League</a></li><li class="py-1"><a class="hover:text-on-surface transition-colors" data-path="route-setting-schedule" href="#">Route Setting Schedule</a></li><li class="py-1"><a class="hover:text-on-surface transition-colors" data-path="community-partnerships" href="#">PNW Access Fund</a></li><li class="py-1"><a class="hover:text-on-surface transition-colors" data-path="careers" href="#">Careers at Source</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-caption text-caption text-text-muted"><div class="flex flex-wrap items-center gap-space-md"><a class="text-primary hover:underline" data-path="waiver" href="#">Sign Participant Waiver</a><a class="hover:text-on-surface transition-colors" data-path="rules-safety" href="#">Gym Rules &amp; Safety</a><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a></div><p>© 2025 Source Climbing Center. All rights reserved.</p></div></div></footer></body></html>
