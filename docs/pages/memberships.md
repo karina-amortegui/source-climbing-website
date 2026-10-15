@@ -1,10 +1,10 @@
 # Memberships
 
-Route: `/membership` (retain existing singular route). Navigation: Membership. Status: proposed page-family specification.
+Route: `memberships.html` (the production navigation target remains the existing page). Navigation: Membership. Status: Owner Demo V1 implementation.
 
 ## Purpose and audience
 
-Help prospective members compare plans and existing members manage requests. Main action: **Choose a Membership** → verified plan-specific Rock Gym Pro purchase. Utility action: **Manage Membership** → proposed `/membership/manage`.
+Help prospective members compare plans and purchase options. Account management is external and remains on the current operational Member Services flow until the Redpoint HQ transition is approved. Page-specific presentation lives in `styles/memberships.css`; no page-specific JavaScript is required.
 
 ## Section order
 
@@ -13,7 +13,22 @@ Help prospective members compare plans and existing members manage requests. Mai
 3. Eligibility and family options with online versus front-desk purchase distinctions.
 4. Benefits and guest-pass explanation.
 5. FAQs and related Rates & Rentals link.
-6. Visible member-services entry and help contact.
+6. Clear transition note and current member-services fallback.
+
+The implemented page also includes an existing-member banner, family/household guidance, online versus front-desk signup guidance, a community image section, native FAQ disclosures, and a final call to action. The supplied reference's unsupported operational claims were replaced with neutral copy or explicit owner-confirmation notes.
+
+## Redpoint HQ transition
+
+Redpoint HQ is the planned external destination for account management in November 2026. Its verified customer-portal URL is not available, so **Manage Membership** must remain a pending integration dependency rather than a guessed or nonfunctional link. Preserve the current operational link until the destination is approved and ready.
+
+References to the current member-management flow:
+
+- `member-services.html` — current operational page and Rock Gym Pro request-form handoff.
+- `styles/member-services.css` — styles used by that page.
+- `scripts/member-services.js` — interaction logic used by that page.
+- Existing navigation references in `home.html`, `contact.html`, `youth-programs.html`, `parties-groups.html`, `about.html`, and `member-services.html`.
+
+Once the Redpoint HQ destination is verified and all references are migrated, the three page-specific files above can be safely removed together, subject to a final repository-wide reference check. Do not remove them before then.
 
 ## Plan content
 
