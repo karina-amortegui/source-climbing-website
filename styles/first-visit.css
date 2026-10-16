@@ -1,5 +1,5 @@
 /* First Visit page styles use the shared home and source design tokens. */
-.visit-hero { background: var(--home-low); padding: var(--source-section-space) 0; border-bottom: 1px solid var(--home-border); }
+.visit-hero { background: var(--home-background-gradient), var(--home-low); padding: var(--source-section-space) 0; border-bottom: 1px solid var(--home-border); }
 .visit-hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: var(--source-section-space); align-items: center; }
 .visit-badge { display: inline-flex; gap: .6rem; align-items: center; padding: .55rem .85rem; border-radius: 999px; background: var(--home-charcoal); border: 1px solid var(--home-border); color: var(--home-highlight); font: var(--source-weight-label) var(--source-text-small)/1.5 var(--home-heading); text-transform: uppercase; letter-spacing: .06em; }
 .visit-hero h1 { font-size: var(--source-text-display); line-height: var(--source-leading-heading); margin: var(--source-gutter) 0; }

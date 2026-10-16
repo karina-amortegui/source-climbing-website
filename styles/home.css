@@ -11,13 +11,22 @@
   --home-text: #f5f5f0;
   --home-muted: #a6a6aa;
   --home-lime: #b6d532;
+  --home-background-glow: rgb(182 213 50 / 0.11);
+  --home-background-gradient: radial-gradient(ellipse 72% 34% at 50% 0%, var(--home-background-glow), transparent 76%);
   --home-highlight: #d2f24e;
   --home-heading: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
   --home-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 7rem; }
-body { margin: 0; background: var(--home-bg); color: var(--home-text); font: 400 1rem/1.6 var(--home-body); }
+body {
+  margin: 0;
+  background:
+    var(--home-background-gradient),
+    var(--home-bg);
+  color: var(--home-text);
+  font: 400 1rem/1.6 var(--home-body);
+}
 ::selection { background: var(--home-lime); color: #111; }
 a { color: inherit; text-decoration: none; }
 a:hover { color: var(--home-highlight); }
